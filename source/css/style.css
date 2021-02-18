@@ -1,1 +1,147 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "OpanSans-regular";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url(../../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "OpanSans-semibold";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url(../../fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "OpanSans-bold";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url(../../fonts/OpenSans-Bold.ttf);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  font-family: "OpanSans-regular", "Arial", sans-serif;
+}
+
+.text-title {
+  font-family: "OpanSans-bold", "Arial", sans-serif;
+  font-size: 42px;
+  line-height: 14px;
+}
+
+.conteiner {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.page-header {
+  padding-top: 30px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__logo img {
+  height: 52px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__contact {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 0 45px 0 0;
+}
+
+.main-nav__phone {
+  font-family: "OpanSans-bold", "Arial", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+.main-nav__time {
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.main-nav__feedback {
+  padding: 10px 1px 10px 25px;
+  position: relative;
+}
+
+.main-nav__feedback::after {
+  position: absolute;
+  content: url(/source/img/icon_phone.svg);
+  left: 20px;
+}
+
+.button {
+  width: 180px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "OpanSans-bold", "Arial", sans-serif;
+  border: none;
+  border-bottom: 3px solid #736357;
+  border-radius: 100px;
+  text-align: center;
+}
+
+.button--orenge {
+  background-color: #ffd347;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
