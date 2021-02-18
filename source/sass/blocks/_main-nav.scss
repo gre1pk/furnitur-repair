@@ -1,0 +1,29 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.main-nav__contact {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 0 45px 0 0;
+}
+.main-nav__phone {
+  font-family: $bold-font;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+.main-nav__time {
+  @include text-opacity;
+}
+.main-nav__feedback {
+  padding: 10px 1px 10px 25px;
+  position: relative;
+
+  &::after{
+      position: absolute;
+      content: url(/source/img/icon_phone.svg);
+      left: 20px;
+  }
+ }

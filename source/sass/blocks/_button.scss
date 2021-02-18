@@ -1,0 +1,17 @@
+.button{
+    width: 180px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: $bold-font;
+    // display: flex;
+    border: none;
+    border-bottom: 3px solid #736357;
+    border-radius: 100px;
+    text-align: center;
+    // align-items: center;
+    &--orenge{
+        background-color: $orenge-color;
+        color: black;
+    }
+}
