@@ -23,25 +23,35 @@
     <main page__main>
         <section class="promo">
             <div class="promo__wrapper conteiner">
-                <h1 class="promo__title"><span class="promo__title--orenge">Ремонт</span>и перетяжка мягкой мебели</h1>
-                <p class="promo__text">В Минске, Жодино и Борисов</p>
-                <div class="promo__description">
-                <div class="promo__description--gerent">гарантия</div>
-                <div class="promo__description--many">оплата в рассрочку</div>
-                </div>
+                <h1 class="promo__title"><span class="promo__title--orenge">Ремонт</span> и перетяжка <br> мягкой мебели</h1>
+                <p class="promo__text">в Минске, Жодино и Борисов</p>
+                <ul class="promo__list">
+                    <li class="promo__item promo__item--gerent">Гарантия</li>
+                    <li class="promo__item promo__item--many">Оплата в рассрочку</li>
+                 </ul>
                 <a class="promo__button button button--orenge" href="">Узнать стоимость</a>
             </div>
         </section>
         <section class="direction">
             <div class="direction__wrapper conteiner">
-                <span class="direction__title text-title">Восстанавливаем то,<br> что вам дорого</span>
-                <p class="direction__text">Вы экономите до 70% бюджета благодаря ремонту и реставрации любимых предметов интерьера.</p>
-                <ul class="direction__list">
-                    <li class="direction__item direction__item--car">Бесплатная транспортировка</li>
-                    <li class="direction__item direction__item--contact">Работаем по договору</li>
-                    <li class="direction__item direction__item--master">Бесплатный вызов мастера</li>
-                </ul>
-                <form class="direction__form form-feedback" action=""></form>
+                <div class="dierction__cont">
+                  <span class="direction__title text-title">Восстанавливаем то,<br> что вам дорого</span>
+                    <p class="direction__text">Вы экономите до 70% бюджета благодаря ремонту и реставрации любимых предметов интерьера.</p>
+                    <ul class="direction__list">
+                        <li class="direction__item direction__item--car">Бесплатная транспортировка</li>
+                        <li class="direction__item direction__item--contact">Работаем по договору</li>
+                        <li class="direction__item direction__item--master">Бесплатный вызов мастера</li>
+                    </ul>
+                </div>
+                <form class="direction__form form-feedback" method="POST" enctype="multipart/form-data" action="https://echo.htmlacademy.ru">
+                    <div class="form-feedback__wrapper">
+                        <p class="form-feedback__title">Нужен мастер?</p>
+                        <p class="form-feedback__text">Оставте заявку, он позвонит вам</p>
+                        <input name="name" type="text" class="input-form form-feedback__name" placeholder="Ваше имя" required>
+                        <input name="phone" type="tel" class="input-form form-feedback__tel" placeholder="Ваш номер телефона" required>
+                        <button class="button button--orenge form-feedback__button" type="submit">Оставить зоявку</button>
+                    </div>
+                </form>
             </div>
         </section>
         <section class="services">
