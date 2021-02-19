@@ -1,0 +1,61 @@
+.direction{
+    padding-top: 50px;
+    background-color: $bg-color-greey;
+    
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text{
+        padding-top: 40px;
+        @include text-opacity;
+        width: 500px;
+    }
+    &__list{
+        padding-top: 140px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 600px;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 150px;
+        text-align: center;
+        position: relative;
+        
+        &--car::before{
+            position: absolute;
+            content: '';
+            background-image: url(/source/img/direction-1.svg);
+            background-size: 150px;
+            top: -110px;
+            right: -9px;
+            width: 150px;
+            height: 150px;
+            background-repeat: no-repeat;
+        }
+        &--contact::before{
+            position: absolute;
+            content: '';
+            background-image: url(/source/img/direction-2.svg);
+            background-size: 87px;
+            top: -100px;
+            right: -28px;
+            width: 100%;
+            height: 150px;
+            background-repeat: no-repeat;
+        }
+        &--master::before{
+            position: absolute;
+            content: '';
+            background-image: url(/source/img/direction-3.svg);
+            background-size: 87px;
+            top: -100px;
+            right: -28px;
+            width: 100%;
+            height: 150px;
+            background-repeat: no-repeat;
+        }
+    }
+}

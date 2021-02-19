@@ -1,0 +1,73 @@
+.promo{
+    padding-bottom: 50px;
+}
+.promo__wrapper{
+    padding-top: 100px;
+}
+
+.promo__title{
+    font-size: 42px;
+    line-height: 45px;
+    font-weight: 700;
+    &--orenge{
+        background: url(/source/img/Line.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+    }
+}
+.promo__text{
+    padding: 20px 0px 0px 60px;
+    position: relative;
+
+    &::after{
+        position: absolute;
+        content: '';
+        background-image: url(/source/img/Line.svg);
+        left: 12px;
+        bottom: 8px;
+        height: 3px;
+        width: 40px;
+    }
+}
+
+.promo__list{
+    padding: 50px 0;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo__item{
+    position: relative;
+    &--gerent{
+        padding-left: 70px;
+
+        &::after{
+            position: absolute;
+            content: '';
+            background-image: url(/source/img/promo-cion-1.png);
+            left: 7px;
+            top: -24px;
+            width: 62px;
+            height: 50px;
+        }
+    }
+    &--many{
+        &::after{
+            position: absolute;
+            content: '';
+            background-image: url(/source/img/promo-cion-2.png);
+            left: -65px;
+            top: -40px;
+            width: 58px;
+            height: 70px;
+        }
+    }
+}
+.promo__button{
+    display: block;
+    padding: 19px;
+    width: 260px;
+    font-size: 19px;
+}
