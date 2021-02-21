@@ -226,7 +226,7 @@ p {
 }
 
 .direction {
-  padding-top: 50px;
+  padding: 50px 0;
   background-color: #efefef;
 }
 
@@ -300,7 +300,7 @@ p {
 }
 
 .form-feedback {
-  min-width: 260px;
+  width: 260px;
   background-color: #ffffff;
   border-radius: 10px;
   filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
@@ -337,5 +337,200 @@ p {
   border-radius: 100px;
   height: 46px;
   padding: 0 0 0  24px;
+}
+
+.services {
+  padding: 50px 0;
+}
+
+.services__list {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 600px;
+}
+
+.services__item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
+  padding: 20px 20px 20px 90px;
+  color: #818181;
+  font-size: 12px;
+  position: relative;
+}
+
+.services__item--material::before {
+  position: absolute;
+  content: '';
+  background-image: url(/source/img/services1.png);
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 91px;
+  top: 25px;
+  right: 216px;
+  background-size: 57px;
+}
+
+.services__item--car::before {
+  position: absolute;
+  content: '';
+  background-image: url(/source/img/services2.png);
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 91px;
+  top: 25px;
+  right: 216px;
+  background-size: 57px;
+}
+
+.services__item--price::before {
+  position: absolute;
+  content: '';
+  background-image: url(/source/img/promo-cion-2.png);
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 91px;
+  top: 7px;
+  right: 216px;
+  background-size: 57px;
+}
+
+.services__item--time::before {
+  position: absolute;
+  content: '';
+  background-image: url(/source/img/services4.png);
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 79px;
+  top: 14px;
+  right: 212px;
+  background-size: 50px;
+}
+
+.services__item-title {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.performance {
+  padding: 50px 0;
+}
+
+.performance__list {
+  display: flex;
+  padding-top: 160px;
+  justify-content: space-around;
+  text-align: center;
+  font-weight: 600;
+}
+
+.performance__item {
+  position: relative;
+}
+
+.performance__item--01::after {
+  content: '';
+  position: absolute;
+  background-image: url(/source/img/01service.svg);
+  background-repeat: no-repeat;
+  background-size: 26px;
+  width: 26px;
+  height: 26px;
+  top: -121px;
+  right: 77px;
+}
+
+.performance__item--01::before {
+  content: '';
+  position: absolute;
+  background-image: url(/source/img/direction-3.svg);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  width: 100px;
+  height: 100px;
+  top: -122px;
+  right: -22px;
+}
+
+.performance__item--02::after {
+  content: '';
+  position: absolute;
+  background-image: url(/source/img/02service.svg);
+  background-repeat: no-repeat;
+  background-size: 26px;
+  width: 26px;
+  height: 26px;
+  top: -121px;
+  right: 92px;
+}
+
+.performance__item--02::before {
+  content: '';
+  position: absolute;
+  background-image: url(/source/img/direction-2.svg);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  width: 100px;
+  height: 100px;
+  top: -122px;
+  right: -6px;
+}
+
+.performance__item--03::after {
+  content: '';
+  position: absolute;
+  background-image: url(/source/img/03service.svg);
+  background-repeat: no-repeat;
+  background-size: 26px;
+  width: 26px;
+  height: 26px;
+  top: -121px;
+  right: 105px;
+}
+
+.performance__item--03::before {
+  content: '';
+  position: absolute;
+  background-image: url(/source/img/perfomance3.svg);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  width: 100px;
+  height: 100px;
+  top: -122px;
+  right: 3px;
+}
+
+.performance__item--04::after {
+  content: '';
+  position: absolute;
+  background-image: url(/source/img/04service.svg);
+  background-repeat: no-repeat;
+  background-size: 26px;
+  width: 26px;
+  height: 26px;
+  top: -121px;
+  right: 89px;
+}
+
+.performance__item--04::before {
+  content: '';
+  position: absolute;
+  background-image: url(/source/img/direction-1.svg);
+  background-size: 182px;
+  width: 182px;
+  height: 182px;
+  top: -132px;
+  right: -56px;
+}
+
+.performance__button {
+  display: block;
+  padding: 19px;
+  width: 260px;
+  font-size: 19px;
 }
 /*# sourceMappingURL=style.css.map */
