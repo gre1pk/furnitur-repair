@@ -6,6 +6,9 @@
         background-repeat: no-repeat;
         background-position: center right;
         background-size: 400px;
+        @media (max-width: $tablet-width){
+            background-image: none;
+        }  
     }
     
     &__list{
@@ -13,7 +16,10 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
-        max-width: 600px;    
+        max-width: 600px;  
+        @media (max-width: $tablet-width){
+            grid-template-columns: 1fr;
+        }  
     }
 
     &__item{

@@ -1,7 +1,18 @@
 .conteiner{
     width: 1000px;
+    // width:80%;
     margin:0 auto;
-    // @media (max-width: $desktop-width) {
+
+   
+
+    @media (max-width: $desktop-width) {
+        width:90%;
+    }
+    @media (max-width: $tablet-width) {
+        width:95%;
+    }
+    // @media (min-width: $mobile-width) {
     //     width:100%;
-    //   }
+    // }
+
 }

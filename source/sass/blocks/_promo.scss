@@ -12,6 +12,15 @@
     background-size: 590px;
     // background-position: center right;
     background-position: 400px -45px;
+    
+    @media (max-width: $desktop-width){
+        background-position: center right;
+    }
+    @media (max-width: $tablet-width){
+        background-size: cover;
+        background-position: center;
+    }  
+    
 }
 
 .promo__title{
@@ -45,6 +54,11 @@
     width: 400px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: $tablet-width){
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
 }
 
 .promo__item{

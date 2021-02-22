@@ -4,24 +4,45 @@
     &__wrapper{
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: $tablet-width){
+            display: block;
+        }
     }
 
     &__text{
         padding-top: 40px;
         @include text-opacity;
         width: 500px;
+        @media (max-width: $desktop-width){
+            max-width: 400px;
+        }
+        @media (max-width: $tablet-width){
+            width: 100%;
+        }
     }
     &__list{
         padding-top: 140px;
         display: flex;
-        flex-wrap: wrap;
         width: 600px;
         justify-content: space-between;
+        @media (max-width: $desktop-width){
+            width: 100%;
+        }
+        @media (max-width: $tablet-width){
+            flex-direction: column;
+            align-items: center;
+            height: 470px;
+            padding-top: 100px;
+        }
     }
     &__item{
         max-width: 150px;
         text-align: center;
         position: relative;
+        @media (max-width: $tablet-width){
+           
+        }
         
         &--car::before{
             position: absolute;
@@ -56,5 +77,10 @@
             height: 150px;
             background-repeat: no-repeat;
         }
+    }
+    &__form{
+        @media (max-width: $tablet-width){
+            display: none;
+        }  
     }
 }

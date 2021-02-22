@@ -6,6 +6,10 @@
         background-repeat: no-repeat;
         background-position: 160px 145px;
         background-size: 700px;
+
+        @media (max-width: $tablet-width){
+            background-image: none;
+        }
     }
 
     // &__title{
@@ -18,11 +22,18 @@
         justify-content: space-around;
         text-align: center;
         font-weight: 600;
+
+        @media (max-width: $tablet-width){
+            flex-direction: column;
+            align-items: center;
+            height: 900px;
+            padding-top: 100px;
+        }
     }
 
     &__item{
         position: relative;
-
+        
         &--01::after{
             content: '';
             position: absolute;
