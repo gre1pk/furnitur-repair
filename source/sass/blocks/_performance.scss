@@ -1,6 +1,13 @@
 .performance{
     padding: 50px 0;
 
+    &__wrapper{
+        background-image: url(/source/img/perfomance-line.svg);
+        background-repeat: no-repeat;
+        background-position: 160px 145px;
+        background-size: 700px;
+    }
+
     // &__title{
     //     margin-bottom:40px;
     // }
@@ -97,8 +104,9 @@
             content: '';
             position: absolute;
             background-image: url(/source/img/direction-1.svg);
+            background-repeat: no-repeat;
             background-size: 182px;
-             width: 182px;
+            width: 182px;
             height: 182px;
             top: -132px;
             right: -56px;
@@ -107,6 +115,7 @@
 
     &__button{
         display: block;
+        margin: 50px auto;
         padding: 19px;
         width: 260px;
         font-size: 19px;
