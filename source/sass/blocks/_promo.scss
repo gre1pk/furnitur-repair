@@ -1,8 +1,17 @@
 .promo{
     padding-bottom: 50px;
+    background-image: url(/source/img/promo-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .promo__wrapper{
     padding-top: 100px;
+    background-image: url(/source/img/promo-sofa.png);
+    background-repeat: no-repeat;
+    background-size: 590px;
+    // background-position: center right;
+    background-position: 400px -45px;
 }
 
 .promo__title{

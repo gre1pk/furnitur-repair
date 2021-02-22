@@ -1,6 +1,12 @@
 .page{
     font-family: $default-font;
-    background-color: $bg-color-greey;
+    background-color: $bg-color-lite;
+    &__body{
+        margin: 0;
+    }
+    &__main{
+        width: 100%;
+    }
 
 }
 .text-title{
