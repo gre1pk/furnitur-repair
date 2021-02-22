@@ -9,16 +9,17 @@
         margin: 0 auto;
         text-align: center;
     }
+
     &__title{
         padding-top: 40px;
-        font-size: 23px;
-        
-        
+        font-size: 23px;    
     }
+
     &__text{
         @include text-opacity;
         margin-top: 12px;
     }
+    
     &__button{
         margin: 22px 0;
         padding: 17px;

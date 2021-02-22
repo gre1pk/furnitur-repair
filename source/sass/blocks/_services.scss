@@ -1,5 +1,12 @@
 .services{
     padding: 50px 0;
+
+    &__wrapper{
+        background-image: url(/source/img/services-bg.png);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: 400px;
+    }
     
     &__list{
         padding-top:40px;

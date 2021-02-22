@@ -2,4 +2,15 @@
     font-size: 32px;
     line-height: 38px;
     font-weight: 600;
+    position: relative;
+
+    &::before{
+        position: absolute;
+        content: '';
+        background-image: url(/source/img/Line.svg);
+        background-size: 50px;
+        height: 4px;
+        width: 85px;
+        top: 42px;
+    }
 }
