@@ -1,103 +1,185 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ремонт мебели</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="page__body">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="page__body">
     <header class="page-header">
-        <div class="page-header__wrapper conteiner">
-            <a class="page-header__logo" href="index.html"><img class="page-header__img" src="img/logo.svg" alt="logo" width="100"></a>
-            <nav class="main-nav">
-                <div class="main-nav__contact">
-                    <a class="main-nav__phone" href="tel: +375296758342">+375 (29) 675-83-42</a>
-                    <span class="main-nav__time">с 9:00 до 18:00 без выходных </span>
-                </div>
-                <a class="button main-nav__feedback button--orenge" href="#">Обратный звонок</a>
-            </nav>
-        </div>
+      <div class="page-header__wrapper conteiner">
+        <a class="page-header__logo" href="index.html"
+          ><img
+            class="page-header__img"
+            src="img/logo.svg"
+            alt="logo"
+            width="100"
+        /></a>
+        <nav class="main-nav">
+          <div class="main-nav__contact">
+            <a class="main-nav__phone" href="tel: +375296758342"
+              >+375 (29) 675-83-42</a
+            >
+            <span class="main-nav__time">с 9:00 до 18:00 без выходных </span>
+          </div>
+          <a class="button main-nav__feedback button--orenge" href="#"
+            >Обратный звонок</a
+          >
+        </nav>
+      </div>
     </header>
     <main page__main>
-        <section class="promo">
-            <div class="promo__wrapper conteiner">
-                <h1 class="promo__title"><span class="promo__title--orenge">Ремонт</span> и перетяжка <br> мягкой мебели</h1>
-                <p class="promo__text">в Минске, Жодино и Борисов</p>
-                <ul class="promo__list">
-                    <li class="promo__item promo__item--gerent">Гарантия</li>
-                    <li class="promo__item promo__item--many">возможно в рассрочку</li>
-                 </ul>
-                <a class="promo__button button button--orenge" href="">Узнать стоимость</a>
+      <section class="promo">
+        <div class="promo__wrapper conteiner">
+          <h1 class="promo__title">
+            <span class="promo__title--orenge">Ремонт</span> и перетяжка <br />
+            мягкой мебели
+          </h1>
+          <p class="promo__text">в Минске, Жодино и Борисов</p>
+          <ul class="promo__list">
+            <li class="promo__item promo__item--gerent">Гарантия</li>
+            <li class="promo__item promo__item--many">возможно в рассрочку</li>
+          </ul>
+          <a class="promo__button button button--orenge" href=""
+            >Узнать стоимость</a
+          >
+        </div>
+      </section>
+      <section class="direction">
+        <div class="direction__wrapper conteiner">
+          <div class="dierction__cont">
+            <span class="direction__title text-title"
+              >Восстанавливаем то,<br />
+              что вам дорого</span
+            >
+            <p class="direction__text">
+              Вы экономите до 70% бюджета благодаря ремонту и реставрации
+              любимых предметов интерьера.
+            </p>
+            <ul class="direction__list">
+              <li class="direction__item direction__item--car">
+                Бесплатная транспортировка
+              </li>
+              <li class="direction__item direction__item--contact">
+                Работаем по договору
+              </li>
+              <li class="direction__item direction__item--master">
+                Бесплатный вызов мастера
+              </li>
+            </ul>
+          </div>
+          <form
+            class="direction__form form-feedback"
+            method="POST"
+            enctype="multipart/form-data"
+            action="https://echo.htmlacademy.ru"
+          >
+            <div class="form-feedback__wrapper">
+              <p class="form-feedback__title">Нужен мастер?</p>
+              <p class="form-feedback__text">Оставте заявку, он позвонит вам</p>
+              <input
+                name="name"
+                type="text"
+                class="input-form form-feedback__name"
+                placeholder="Ваше имя"
+                required
+              />
+              <input
+                name="phone"
+                type="tel"
+                class="input-form form-feedback__tel"
+                placeholder="Ваш номер телефона"
+                required
+              />
+              <button
+                class="button button--orenge form-feedback__button"
+                type="submit"
+              >
+                Оставить заявку
+              </button>
             </div>
-        </section>
-        <section class="direction">
-            <div class="direction__wrapper conteiner">
-                <div class="dierction__cont">
-                  <span class="direction__title text-title">Восстанавливаем то,<br> что вам дорого</span>
-                    <p class="direction__text">Вы экономите до 70% бюджета благодаря ремонту и реставрации любимых предметов интерьера.</p>
-                    <ul class="direction__list">
-                        <li class="direction__item direction__item--car">Бесплатная транспортировка</li>
-                        <li class="direction__item direction__item--contact">Работаем по договору</li>
-                        <li class="direction__item direction__item--master">Бесплатный вызов мастера</li>
-                    </ul>
-                </div>
-                <form class="direction__form form-feedback" method="POST" enctype="multipart/form-data" action="https://echo.htmlacademy.ru">
-                    <div class="form-feedback__wrapper">
-                        <p class="form-feedback__title">Нужен мастер?</p>
-                        <p class="form-feedback__text">Оставте заявку, он позвонит вам</p>
-                        <input name="name" type="text" class="input-form form-feedback__name" placeholder="Ваше имя" required>
-                        <input name="phone" type="tel" class="input-form form-feedback__tel" placeholder="Ваш номер телефона" required>
-                        <button class="button button--orenge form-feedback__button" type="submit">Оставить заявку</button>
-                    </div>
-                </form>
+          </form>
+        </div>
+      </section>
+      <section class="services">
+        <div class="services__wrapper conteiner">
+          <span class="services__title text-title">Мы предоставляем:</span>
+          <ul class="services__list">
+            <li class="services__item services__item--material">
+              <p class="services__item-title">Лучшие материалы</p>
+              Используем только лучшие материалы
+            </li>
+            <li class="services__item services__item--car">
+              <p class="services__item-title">Надежную доставку</p>
+              Тщательно упакуем и доставим мебель
+            </li>
+            <li class="services__item services__item--price">
+              <p class="services__item-title">Неизменную цену</p>
+              Гарантируем неизменную стоимость всех работ
+            </li>
+            <li class="services__item services__item--time">
+              <p class="services__item-title">Соблюдение сроков</p>
+              Делаем ремонт всегда вовремя
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="price visually-hidden">
+        <div class="price__wrapper conteiner">
+          <span class="price__title text-title"
+            >Расчетайте стоимость ремонта онлайн</span
+          >
+        </div>
+      </section>
+      <section class="performance">
+        <div class="performance__wrapper conteiner">
+          <span class="performance__title text-title">Как мы работаем?</span>
+          <ul class="performance__list">
+            <li class="performance__item performance__item--01">
+              Вызов<br />мастера
+            </li>
+            <li class="performance__item performance__item--02">
+              Расчет<br />стоимости
+            </li>
+            <li class="performance__item performance__item--03">
+              Реставрация<br />мебели
+            </li>
+            <li class="performance__item performance__item--04">
+              Доставка<br />и оплата
+            </li>
+          </ul>
+          <a class="performance__button button button--orenge" href=""
+            >Вызвать мастера</a
+          >
+        </div>
+      </section>
+      <section class="dillers">
+        <div class="dillers__wrapper conteiner">
+          <span class="dillers__title text-title">Наши контакты</span>
+          <div class="dillers-info form-feedback">
+            <div class="form-feedback__wrapper dillers-info__wrapper">
+              <p class="dillers-info__title">Ответим на любой ваш вопрос</p>
+              <ul class="dillers-info__list">
+                <li class="dillers-info__item dillers-info__item--phone">
+                  <span class="text--greey">Телефон: <br /></span>+375 (29)
+                  675-83-42
+                </li>
+                <li class="dillers-info__item dillers-info__item--address">
+                  <span class="text--greey">Адрес: <br /></span>г.Минск,
+                  г.Жодино
+                </li>
+                <li class="dillers-info__item dillers-info__item--maill">
+                  <span class="text--greey">Почта: <br /></span
+                  >zaharalexxxx@gmail.com
+                </li>
+              </ul>
             </div>
-        </section>
-        <section class="services">
-            <div class="services__wrapper conteiner">
-                <span class="services__title text-title">Мы предоставляем:</span>
-                <ul class="services__list">
-                    <li class="services__item services__item--material"><p class="services__item-title">Лучшие материалы</p> Используем только лучшие материалы</li>
-                    <li class="services__item services__item--car"><p class="services__item-title">Надежную доставку</p> Тщательно упакуем и доставим мебель</li>
-                    <li class="services__item services__item--price"><p class="services__item-title">Неизменную цену</p> Гарантируем неизменную стоимость всех работ</li>
-                    <li class="services__item services__item--time"><p class="services__item-title">Соблюдение сроков</p> Делаем ремонт всегда вовремя</li>
-                </ul>
-            </div>
-        </section>
-        <section class="price visually-hidden">
-            <div class="price__wrapper conteiner">
-                <span class="price__title text-title">Расчетайте стоимость ремонта онлайн</span>
-            </div>
-        </section>
-        <section class="performance">
-            <div class="performance__wrapper conteiner">
-                <span class="performance__title text-title">Как мы работаем?</span>
-                <ul class="performance__list">
-                    <li class="performance__item performance__item--01">Вызов<br>мастера</li>
-                    <li class="performance__item performance__item--02">Расчет<br>стоимости</li>
-                    <li class="performance__item performance__item--03">Реставрация<br>мебели</li>
-                    <li class="performance__item performance__item--04">Доставка<br>и оплата</li>
-                </ul>
-                <a class="performance__button button button--orenge" href="">Вызвать мастера</a>
-            </div>
-        </section>
-        <section class="dillers">
-            <div class="dillers__wrapper conteiner">
-                <span class="dillers__title text-title">Наши контакты</span>
-                <div class="dillers-info form-feedback">
-                    <div class="form-feedback__wrapper dillers-info__wrapper">
-                        <p class="dillers-info__title">Ответим на любой ваш вопрос</p>
-                        <ul class="dillers-info__list">
-                            <li class="dillers-info__item dillers-info__item--phone"><span class="text--greey">Телефон: <br></span>+375 (29) 675-83-42</li>
-                            <li class="dillers-info__item dillers-info__item--address"><span class="text--greey">Адрес: <br></span>г.Минск, г.Жодино</li>
-                            <li class="dillers-info__item dillers-info__item--maill"><span class="text--greey">Почта: <br></span>zaharalexxxx@gmail.com</li>
-                        </ul>
-                    </div>   
-                </div>
-                <div class="dillers__map" id="map"></div>
-            </div>
-        </section>
+          </div>
+          <div class="dillers__map" id="map"></div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>

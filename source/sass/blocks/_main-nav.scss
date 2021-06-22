@@ -21,9 +21,9 @@
   padding: 10px 1px 10px 25px;
   position: relative;
 
-  &::after{
-      position: absolute;
-      content: url(/source/img/icon_phone.svg);
-      left: 20px;
+  &::after {
+    position: absolute;
+    content: url(../../img/icon_phone.svg);
+    left: 20px;
   }
- }
+}

@@ -1,25 +1,30 @@
-.button{
-    width: 180px;
-    box-sizing: border-box;
-    font-size: 14px;
-    font-weight: 700;
-    font-family: $bold-font;
-    // display: flex;
-    border: none;
-    border-radius: 100px;
-    text-align: center;
-    // align-items: center;
-    &--orenge{
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(235, 136, 20, 0.37) 83.33%), #FFD347;
-        box-shadow: 0px 3px 1px #CE7915;
-        color: black;
-    }
+.button {
+  width: 180px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: $bold-font;
+  // display: flex;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  // align-items: center;
+  &--orenge {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(235, 136, 20, 0.37) 83.33%
+      ),
+      #ffd347;
+    box-shadow: 0px 3px 1px #ce7915;
+    color: black;
+  }
 
-    &:hover{
-        opacity: 0.8;
-        cursor:pointer ;
-    }
-    &:active{
-        opacity: 0.5;
-    }
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  &:active {
+    opacity: 0.5;
+  }
 }
