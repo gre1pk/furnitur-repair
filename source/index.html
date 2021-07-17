@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ремонт мебели</title>
     <link rel="stylesheet" href="./css/style.css" />
+
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -70,19 +71,17 @@
               </li>
             </ul>
           </div>
-          <!-- <div>Ваше Имя:</div>
-          <input type="text" name="name" id="name" value="" />
-          <div>Ваш E-mail <span>*</span>:</div>
-          <input type="text" name="email" id="email" value="" />
-          <div>Сообщение <span>*</span>:</div>
-          <textarea name="message" id="message"></textarea>
-          <div class="result"></div>
-          <a href="javascript: void(0);" id="submit">Отправить</a> -->
-          <div id="react-form">
+
+
             <form
               class="direction__form form-feedback"
-              enctype="multipart/form-data"
             >
+            <!-- Hidden Required Fields -->
+        		<input type="hidden" name="project_name" value="Site Name">
+		        <input type="hidden" name="admin_email" value="zab25345@eoopy.com">
+	        	<input type="hidden" name="form_subject" value="Form Subject">
+	          	<!-- END Hidden Required Fields -->
+
               <div class="form-feedback__wrapper">
                 <p class="form-feedback__title">Нужен мастер?</p>
                 <p class="form-feedback__text">
@@ -95,24 +94,22 @@
                   class="input-form form-feedback__name"
                   placeholder="Ваше имя"
                   value=""
-                  required
                 />
                 <input
-                  name="email"
-                  id="email"
+                  name="E-mail"
+                  id="E-mail"
                   type="text"
                   class="input-form form-feedback__tel"
                   placeholder="Ваш E-mail"
-                  required
                 />
-                <a
+                <button
                   class="button button--orenge form-feedback__button"
-                  href="javascript: void(0);"
+                  name="button"
                   type="submit"
-                  id="submit"
+                  id="but_submit"
                 >
                   Оставить заявку
-                </a>
+                </button>
               </div>
             </form>
           </div>
@@ -196,23 +193,7 @@
         </div>
       </section>
     </main>
-
-    <script>
-      $(document).ready(function () {
-        $("#submit").on("click", function () {
-          var name = $("#name").val();
-          var email = $("#email").val();
-
-          $.ajax({
-            url: "/form.php",
-            type: "post",
-            data: { name: name, email: email },
-            success: function (data) {
-              $(".result").html(data);
-            },
-          });
-        });
-      });
-    </script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
