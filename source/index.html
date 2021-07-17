@@ -81,9 +81,7 @@
           <div id="react-form">
             <form
               class="direction__form form-feedback"
-              method="POST"
               enctype="multipart/form-data"
-              action="https://echo.htmlacademy.ru"
             >
               <div class="form-feedback__wrapper">
                 <p class="form-feedback__title">Нужен мастер?</p>
@@ -107,14 +105,14 @@
                   placeholder="Ваш E-mail"
                   required
                 />
-                <button
+                <a
                   class="button button--orenge form-feedback__button"
                   href="javascript: void(0);"
                   type="submit"
                   id="submit"
                 >
                   Оставить заявку
-                </button>
+                </a>
               </div>
             </form>
           </div>
@@ -198,14 +196,23 @@
         </div>
       </section>
     </main>
-    <script
-      src="https://unpkg.com/react@17/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-      crossorigin
-    ></script>
-    <script src="./js/form.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#submit").on("click", function () {
+          var name = $("#name").val();
+          var email = $("#email").val();
+
+          $.ajax({
+            url: "/form.php",
+            type: "post",
+            data: { name: name, email: email },
+            success: function (data) {
+              $(".result").html(data);
+            },
+          });
+        });
+      });
+    </script>
   </body>
 </html>
