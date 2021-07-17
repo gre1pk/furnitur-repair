@@ -196,7 +196,7 @@ p {
 
 .promo {
   padding-bottom: 50px;
-  background-image: url(/source/img/promo-bg.png);
+  background-image: url(/img/promo-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -204,7 +204,7 @@ p {
 
 .promo__wrapper {
   padding-top: 100px;
-  background-image: url(/source/img/promo-sofa.png);
+  background-image: url(/img/promo-sofa.png);
   background-repeat: no-repeat;
   background-size: 590px;
   background-position: 400px -45px;
@@ -230,7 +230,7 @@ p {
 }
 
 .promo__title--orenge {
-  background: url(/source/img/Line.svg);
+  background: url(/img/Line.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
@@ -244,7 +244,7 @@ p {
 .promo__text::after {
   position: absolute;
   content: '';
-  background-image: url(/source/img/Line.svg);
+  background-image: url(/img/Line.svg);
   left: 12px;
   bottom: 8px;
   height: 3px;
@@ -281,7 +281,7 @@ p {
 .promo__item--gerent::after {
   position: absolute;
   content: '';
-  background-image: url(/source/img/promo-cion-1.png);
+  background-image: url(/img/promo-cion-1.png);
   left: 7px;
   top: -24px;
   width: 62px;
@@ -291,7 +291,7 @@ p {
 .promo__item--many::after {
   position: absolute;
   content: '';
-  background-image: url(/source/img/promo-cion-2.png);
+  background-image: url(/img/promo-cion-2.png);
   left: -65px;
   top: -40px;
   width: 58px;
@@ -384,7 +384,7 @@ p {
 .direction__item--car::before {
   position: absolute;
   content: '';
-  background-image: url(/source/img/direction-1.svg);
+  background-image: url(/img/direction-1.svg);
   background-size: 150px;
   top: -110px;
   right: -9px;
@@ -396,7 +396,7 @@ p {
 .direction__item--contact::before {
   position: absolute;
   content: '';
-  background-image: url(/source/img/direction-2.svg);
+  background-image: url(/img/direction-2.svg);
   background-size: 87px;
   top: -100px;
   right: -28px;
@@ -408,7 +408,7 @@ p {
 .direction__item--master::before {
   position: absolute;
   content: '';
-  background-image: url(/source/img/direction-3.svg);
+  background-image: url(/img/direction-3.svg);
   background-size: 87px;
   top: -100px;
   right: -28px;
@@ -433,7 +433,7 @@ p {
 .text-title::before {
   position: absolute;
   content: '';
-  background-image: url(/source/img/Line.svg);
+  background-image: url(/img/Line.svg);
   background-size: 50px;
   height: 4px;
   width: 85px;
@@ -486,7 +486,7 @@ p {
 }
 
 .services__wrapper {
-  background-image: url(/source/img/services-bg.png);
+  background-image: url(/img/services-bg.png);
   background-repeat: no-repeat;
   background-position: center right;
   background-size: 400px;
@@ -510,8 +510,7 @@ p {
 
 @media (max-width: 767px) {
   .services__list {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-auto-rows: auto;
   }
 }
 
@@ -528,8 +527,8 @@ p {
 
 .services__item--material::before {
   position: absolute;
-  content: '';
-  background-image: url(/source/img/services1.png);
+  content: "";
+  background-image: url(/img/services1.png);
   background-repeat: no-repeat;
   width: 60px;
   height: 91px;
@@ -540,8 +539,8 @@ p {
 
 .services__item--car::before {
   position: absolute;
-  content: '';
-  background-image: url(/source/img/services2.png);
+  content: "";
+  background-image: url(/img/services2.png);
   background-repeat: no-repeat;
   width: 60px;
   height: 91px;
@@ -552,8 +551,8 @@ p {
 
 .services__item--price::before {
   position: absolute;
-  content: '';
-  background-image: url(/source/img/promo-cion-2.png);
+  content: "";
+  background-image: url(/img/promo-cion-2.png);
   background-repeat: no-repeat;
   width: 60px;
   height: 91px;
@@ -564,8 +563,8 @@ p {
 
 .services__item--time::before {
   position: absolute;
-  content: '';
-  background-image: url(/source/img/services4.png);
+  content: "";
+  background-image: url(/img/services4.png);
   background-repeat: no-repeat;
   width: 60px;
   height: 79px;
@@ -586,7 +585,7 @@ p {
 }
 
 .performance__wrapper {
-  background-image: url(/source/img/perfomance-line.svg);
+  background-image: url(/img/perfomance-line.svg);
   background-repeat: no-repeat;
   background-position: 160px 145px;
   background-size: 700px;
@@ -630,7 +629,7 @@ p {
 .performance__item--01::after {
   content: "";
   position: absolute;
-  background-image: url(/source/img/01service.svg);
+  background-image: url(/img/01service.svg);
   background-repeat: no-repeat;
   background-size: 26px;
   width: 26px;
@@ -642,7 +641,7 @@ p {
 .performance__item--01::before {
   content: "";
   position: absolute;
-  background-image: url(/source/img/direction-3.svg);
+  background-image: url(/img/direction-3.svg);
   background-repeat: no-repeat;
   background-size: 100px;
   width: 100px;
@@ -654,7 +653,7 @@ p {
 .performance__item--02::after {
   content: "";
   position: absolute;
-  background-image: url(/source/img/02service.svg);
+  background-image: url(/img/02service.svg);
   background-repeat: no-repeat;
   background-size: 26px;
   width: 26px;
@@ -666,7 +665,7 @@ p {
 .performance__item--02::before {
   content: "";
   position: absolute;
-  background-image: url(/source/img/direction-2.svg);
+  background-image: url(/img/direction-2.svg);
   background-repeat: no-repeat;
   background-size: 100px;
   width: 100px;
@@ -678,7 +677,7 @@ p {
 .performance__item--03::after {
   content: "";
   position: absolute;
-  background-image: url(/source/img/03service.svg);
+  background-image: url(/img/03service.svg);
   background-repeat: no-repeat;
   background-size: 26px;
   width: 26px;
@@ -690,7 +689,7 @@ p {
 .performance__item--03::before {
   content: "";
   position: absolute;
-  background-image: url(/source/img/perfomance3.svg);
+  background-image: url(/img/perfomance3.svg);
   background-repeat: no-repeat;
   background-size: 100px;
   width: 100px;
@@ -702,7 +701,7 @@ p {
 .performance__item--04::after {
   content: "";
   position: absolute;
-  background-image: url(/source/img/04service.svg);
+  background-image: url(/img/04service.svg);
   background-repeat: no-repeat;
   background-size: 26px;
   width: 26px;
@@ -714,7 +713,7 @@ p {
 .performance__item--04::before {
   content: "";
   position: absolute;
-  background-image: url(/source/img/direction-1.svg);
+  background-image: url(/img/direction-1.svg);
   background-repeat: no-repeat;
   background-size: 182px;
   width: 182px;

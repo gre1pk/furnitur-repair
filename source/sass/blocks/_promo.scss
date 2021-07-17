@@ -1,26 +1,26 @@
 .promo{
     padding-bottom: 50px;
-    background-image: url(/source/img/promo-bg.png);
+    background-image: url(/img/promo-bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .promo__wrapper{
     padding-top: 100px;
-    background-image: url(/source/img/promo-sofa.png);
+    background-image: url(/img/promo-sofa.png);
     background-repeat: no-repeat;
     background-size: 590px;
     // background-position: center right;
     background-position: 400px -45px;
-    
+
     @media (max-width: $desktop-width){
         background-position: center right;
     }
     @media (max-width: $tablet-width){
         background-size: cover;
         background-position: center;
-    }  
-    
+    }
+
 }
 
 .promo__title{
@@ -28,7 +28,7 @@
     line-height: 45px;
     font-weight: 700;
     &--orenge{
-        background: url(/source/img/Line.svg);
+        background: url(/img/Line.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: bottom;
@@ -41,7 +41,7 @@
     &::after{
         position: absolute;
         content: '';
-        background-image: url(/source/img/Line.svg);
+        background-image: url(/img/Line.svg);
         left: 12px;
         bottom: 8px;
         height: 3px;
@@ -69,7 +69,7 @@
         &::after{
             position: absolute;
             content: '';
-            background-image: url(/source/img/promo-cion-1.png);
+            background-image: url(/img/promo-cion-1.png);
             left: 7px;
             top: -24px;
             width: 62px;
@@ -80,7 +80,7 @@
         &::after{
             position: absolute;
             content: '';
-            background-image: url(/source/img/promo-cion-2.png);
+            background-image: url(/img/promo-cion-2.png);
             left: -65px;
             top: -40px;
             width: 58px;

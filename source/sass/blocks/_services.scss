@@ -1,86 +1,88 @@
-.services{
-    padding: 50px 0;
+.services {
+  padding: 50px 0;
 
-    &__wrapper{
-        background-image: url(/source/img/services-bg.png);
-        background-repeat: no-repeat;
-        background-position: center right;
-        background-size: 400px;
-        @media (max-width: $tablet-width){
-            background-image: none;
-        }  
+  &__wrapper {
+    background-image: url(/img/services-bg.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 400px;
+    @media (max-width: $tablet-width) {
+      background-image: none;
     }
-    
-    &__list{
-        padding-top:40px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-        max-width: 600px;  
-        @media (max-width: $tablet-width){
-            grid-template-columns: 1fr;
-        }  
-    }
+  }
 
-    &__item{
-        background-color: #ffffff;
-        border-radius: 10px;
-        filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
-        padding: 20px 20px 20px 90px;
-        color: rgb(129, 129, 129);
-        font-size: 12px;
-        position: relative;
-
-        &--material::before{
-            position: absolute;
-            content: '';
-            background-image: url(/source/img/services1.png);
-            background-repeat: no-repeat;
-            width: 60px;
-            height: 91px;
-            top: 25px;
-            right: 216px;
-            background-size: 57px;
-        }
-        &--car::before{
-            position: absolute;
-            content: '';
-            background-image: url(/source/img/services2.png);
-            background-repeat: no-repeat;
-            width: 60px;
-            height: 91px;
-            top: 25px;
-            right: 216px;
-            background-size: 57px;
-        }
-        &--price::before{
-            position: absolute;
-            content: '';
-            background-image: url(/source/img/promo-cion-2.png);
-            background-repeat: no-repeat;
-            width: 60px;
-            height: 91px;
-            top: 7px;
-            right: 216px;
-            background-size: 57px;
-        }
-        &--time::before{
-            position: absolute;
-            content: '';
-            background-image: url(/source/img/services4.png);
-            background-repeat: no-repeat;
-            width: 60px;
-            height: 79px;
-            top: 14px;
-            right: 212px;
-            background-size: 50px;
-        }
+  &__list {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 600px;
+    @media (max-width: $tablet-width) {
+    //   grid-template-columns: 1fr;
+      grid-auto-rows: auto;
     }
+  }
+
+  &__item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.25));
+    padding: 20px 20px 20px 90px;
+    color: rgb(129, 129, 129);
+    font-size: 12px;
+    position: relative;
+
+
+    &--material::before {
+      position: absolute;
+      content: "";
+      background-image: url(/img/services1.png);
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 91px;
+      top: 25px;
+      right: 216px;
+      background-size: 57px;
+    }
+    &--car::before {
+      position: absolute;
+      content: "";
+      background-image: url(/img/services2.png);
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 91px;
+      top: 25px;
+      right: 216px;
+      background-size: 57px;
+    }
+    &--price::before {
+      position: absolute;
+      content: "";
+      background-image: url(/img/promo-cion-2.png);
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 91px;
+      top: 7px;
+      right: 216px;
+      background-size: 57px;
+    }
+    &--time::before {
+      position: absolute;
+      content: "";
+      background-image: url(/img/services4.png);
+      background-repeat: no-repeat;
+      width: 60px;
+      height: 79px;
+      top: 14px;
+      right: 212px;
+      background-size: 50px;
+    }
+  }
 }
 
-.services__item-title{
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 6px;
+.services__item-title {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
 }

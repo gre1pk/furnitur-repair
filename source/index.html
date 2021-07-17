@@ -70,37 +70,41 @@
               </li>
             </ul>
           </div>
-          <form
-            class="direction__form form-feedback"
-            method="POST"
-            enctype="multipart/form-data"
-            action="https://echo.htmlacademy.ru"
-          >
-            <div class="form-feedback__wrapper">
-              <p class="form-feedback__title">Нужен мастер?</p>
-              <p class="form-feedback__text">Оставте заявку, он позвонит вам</p>
-              <input
-                name="name"
-                type="text"
-                class="input-form form-feedback__name"
-                placeholder="Ваше имя"
-                required
-              />
-              <input
-                name="phone"
-                type="tel"
-                class="input-form form-feedback__tel"
-                placeholder="Ваш номер телефона"
-                required
-              />
-              <button
-                class="button button--orenge form-feedback__button"
-                type="submit"
-              >
-                Оставить заявку
-              </button>
-            </div>
-          </form>
+          <div id="react-form">
+            <form
+              class="direction__form form-feedback"
+              method="POST"
+              enctype="multipart/form-data"
+              action="https://echo.htmlacademy.ru"
+            >
+              <div class="form-feedback__wrapper">
+                <p class="form-feedback__title">Нужен мастер?</p>
+                <p class="form-feedback__text">
+                  Оставте заявку, он позвонит вам
+                </p>
+                <input
+                  name="name"
+                  type="text"
+                  class="input-form form-feedback__name"
+                  placeholder="Ваше имя"
+                  required
+                />
+                <input
+                  name="phone"
+                  type="tel"
+                  class="input-form form-feedback__tel"
+                  placeholder="Ваш номер телефона"
+                  required
+                />
+                <button
+                  class="button button--orenge form-feedback__button"
+                  type="submit"
+                >
+                  Оставить заявку
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
       <section class="services">
@@ -181,5 +185,14 @@
         </div>
       </section>
     </main>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>

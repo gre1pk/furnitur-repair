@@ -2,7 +2,7 @@
   padding: 50px 0;
 
   &__wrapper {
-    background-image: url(/source/img/perfomance-line.svg);
+    background-image: url(/img/perfomance-line.svg);
     background-repeat: no-repeat;
     background-position: 160px 145px;
     background-size: 700px;
@@ -41,7 +41,7 @@
     &--01::after {
       content: "";
       position: absolute;
-      background-image: url(/source/img/01service.svg);
+      background-image: url(/img/01service.svg);
       background-repeat: no-repeat;
       background-size: 26px;
       width: 26px;
@@ -52,7 +52,7 @@
     &--01::before {
       content: "";
       position: absolute;
-      background-image: url(/source/img/direction-3.svg);
+      background-image: url(/img/direction-3.svg);
       background-repeat: no-repeat;
       background-size: 100px;
       width: 100px;
@@ -63,7 +63,7 @@
     &--02::after {
       content: "";
       position: absolute;
-      background-image: url(/source/img/02service.svg);
+      background-image: url(/img/02service.svg);
       background-repeat: no-repeat;
       background-size: 26px;
       width: 26px;
@@ -74,7 +74,7 @@
     &--02::before {
       content: "";
       position: absolute;
-      background-image: url(/source/img/direction-2.svg);
+      background-image: url(/img/direction-2.svg);
       background-repeat: no-repeat;
       background-size: 100px;
       width: 100px;
@@ -85,7 +85,7 @@
     &--03::after {
       content: "";
       position: absolute;
-      background-image: url(/source/img/03service.svg);
+      background-image: url(/img/03service.svg);
       background-repeat: no-repeat;
       background-size: 26px;
       width: 26px;
@@ -96,7 +96,7 @@
     &--03::before {
       content: "";
       position: absolute;
-      background-image: url(/source/img/perfomance3.svg);
+      background-image: url(/img/perfomance3.svg);
       background-repeat: no-repeat;
       background-size: 100px;
       width: 100px;
@@ -107,7 +107,7 @@
     &--04::after {
       content: "";
       position: absolute;
-      background-image: url(/source/img/04service.svg);
+      background-image: url(/img/04service.svg);
       background-repeat: no-repeat;
       background-size: 26px;
       width: 26px;
@@ -118,7 +118,7 @@
     &--04::before {
       content: "";
       position: absolute;
-      background-image: url(/source/img/direction-1.svg);
+      background-image: url(/img/direction-1.svg);
       background-repeat: no-repeat;
       background-size: 182px;
       width: 182px;
