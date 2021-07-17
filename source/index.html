@@ -70,6 +70,14 @@
               </li>
             </ul>
           </div>
+          <!-- <div>Ваше Имя:</div>
+          <input type="text" name="name" id="name" value="" />
+          <div>Ваш E-mail <span>*</span>:</div>
+          <input type="text" name="email" id="email" value="" />
+          <div>Сообщение <span>*</span>:</div>
+          <textarea name="message" id="message"></textarea>
+          <div class="result"></div>
+          <a href="javascript: void(0);" id="submit">Отправить</a> -->
           <div id="react-form">
             <form
               class="direction__form form-feedback"
@@ -84,21 +92,26 @@
                 </p>
                 <input
                   name="name"
+                  id="name"
                   type="text"
                   class="input-form form-feedback__name"
                   placeholder="Ваше имя"
+                  value=""
                   required
                 />
                 <input
-                  name="phone"
-                  type="tel"
+                  name="email"
+                  id="email"
+                  type="text"
                   class="input-form form-feedback__tel"
-                  placeholder="Ваш номер телефона"
+                  placeholder="Ваш E-mail"
                   required
                 />
                 <button
                   class="button button--orenge form-feedback__button"
+                  href="javascript: void(0);"
                   type="submit"
+                  id="submit"
                 >
                   Оставить заявку
                 </button>
